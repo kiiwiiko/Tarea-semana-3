@@ -3,6 +3,7 @@
 int main(int argc, char const *argv[])
 {
     int suma, num;
+
     printf("Escribir un numero ");
     scanf("%d", &num);
     for (int i = 1; i <= num; i++)
