@@ -2,13 +2,14 @@
 
 int main(int argc, char const *argv[])
 {
-    int suma, num;
-    printf("Escribir un numero ");
+    int suma = 0, num, factorial = 1;
+    printf("Escribir un numero: ");
     scanf("%d", &num);
     for (int i = 1; i <= num; i++)
     {
-        suma = suma + i;
+        factorial = factorial * i;
+        suma = suma + factorial;
     }
-    printf("La sumatoria de los factoriales del numero %d es igual %d", num, suma);
+    printf("La sumatoria de los factoriales del numero %d es igual a %d", num, suma);
     return 0;
 }
