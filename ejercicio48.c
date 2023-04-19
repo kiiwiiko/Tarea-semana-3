@@ -10,7 +10,6 @@ int main(int argc, char const *argv[])
             printf("%d %d\n", i, y);
             y++;
         }
-        
     }
     return 0;
 }
