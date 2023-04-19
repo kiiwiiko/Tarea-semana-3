@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     printf("Ingresar el numero que desea procesar ");
     scanf("%d", &num);
     int resut = factorial(num);
-    int prom = resut / num;
+    prom = resut / num;
     printf("El promedio de la suma de los factoriales del numero %d es %d", num, prom);
     return 0;
 }
