@@ -1,25 +1,27 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
-{
-    do
-    {
-        for (int i = 0; i < count; i++)
-        {
-            /* code */
+int main() {
+    int i, j, k;
+    for (i = 1; i <= 9; i++) {
+        if (i <= 3) {
+            j = 1;
+            k = i;
+        } else if (i <= 6) {
+            j = 2;
+            k = i - 3;
+        } else {
+            j = 3;
+            k = i - 6;
         }
-        for (size_t i = 0; i < count; i++)
-        {
-            /* code */
+        if (i % 3 == 1) {
+            printf("%d ", j);
         }
-        for (size_t i = 0; i < count; i++)
-        {
-            /* code */
+        if (i % 3 == 2) {
+            printf("%d ", k);
         }
-        
-        
-    } while ((i<=9) && (j<=3) && (k<=3));
-    
-
+        if (i % 3 == 0) {
+            printf("%d\n", k);
+        }
+    }
     return 0;
 }
