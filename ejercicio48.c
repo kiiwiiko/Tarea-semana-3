@@ -2,23 +2,22 @@
 
 int main(int argc, char const *argv[])
 {
-    int cont1=0, cont2=1;
+    int i=0, j=1;
    do
    {
-        for (int i = 0; i <= cont1; i++)
+        for (int i = 0; i <= 9; i++)
     {
-        printf("%d", cont1);
+        printf("%d", i);
     }
-    int y=1;
-    for (int j = 0; j <= cont2; j++)
+    for (int j = 0; j <= 5; j++)
     {
       if (j % 2 == 0) {
-            printf("%d", y);
+            printf("%d", j);
         } else {
-            printf("%d", y);
-            y++;
+            printf("%d", j);
+            j++;
         }
     }
-   } while ((cont1<=9) && (cont2<=5));
+   } while ((i<=9) && (j<=5));
    return 0;
 }
